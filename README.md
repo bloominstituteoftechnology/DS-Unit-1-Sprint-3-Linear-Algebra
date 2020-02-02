@@ -1,4 +1,4 @@
-# DS-Unit-1-Sprint-3-Linear-Algebra
+# DS Unit 1 Sprint 3 Linear Algebra
 
 - Module 1:
 - Module 2:
