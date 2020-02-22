@@ -4,3 +4,4 @@
 - Module 2: Finished
 - Module 3: Finished
 - Module 4: Finished
+- Sprint Challenge: 3/3
