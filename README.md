@@ -10,4 +10,6 @@ In the repository, you will find the Guided Projects (lectures) and Module Proje
   
 ## Module 3: Multiple Regression
 
+This folder additionally contains the Fix My Code warm-up activity based on the U1S3M2 project.
+
 ## Module 4: Linear Algebra
