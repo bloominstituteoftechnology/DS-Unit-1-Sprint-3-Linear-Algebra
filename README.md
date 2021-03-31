@@ -2,7 +2,7 @@
 
 ## Sprint 3: Linear Algebra
 
-In the repository, you will find the Guided Projects (lectures) and Module Projects (assignment) for each module.
+In the repository, you will find the Guided Projects (lectures) and Module Projects (assignment) for each module.  There is also a study guide to help you prepare for the Sprint Challenge.
 
 ## Module 1: Simple Linear Correlation and Regression 
 
