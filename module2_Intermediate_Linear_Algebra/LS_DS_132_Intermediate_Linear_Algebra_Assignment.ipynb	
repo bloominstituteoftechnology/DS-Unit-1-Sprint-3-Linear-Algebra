@@ -1,0 +1,1219 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Jordan_Dondre_Group_TL_Maggie_DS17.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dondreojordan/DS-Unit-1-Sprint-3-Linear-Algebra/blob/master/module2-intermediate-linear-algebra/LS_DS_132_Intermediate_Linear_Algebra_Assignment.ipynb%09\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "GmfctDfMWXcw",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "import random"
+      ],
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LfX0BDoO_miV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#def mean(variable):\n",
+        "#  return variable.sum()/len(variable)"
+      ],
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mEHE6La7_yw6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#df = pd DataFrame({'sales'L sales, 'customers': customers})\n",
+        "\n",
+        "#df.head()"
+      ],
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HdpqRm_vAB_l",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#mean(df['customers'])"
+      ],
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OGnooVKtAGL7",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#def variance(variable):\n",
+        "  #x_bar = mean(variable)\n",
+        "  #deviations = variable - x_bar\n",
+        "  #squared_deviations = deviations**2\n",
+        "  #variance = squared_deviations.sum()/(len(varianle)-1)\n",
+        "  #return variances\n",
+        "  #print()deviations\n",
+        "\n",
+        "#variance(df['sales'])"
+      ],
+      "execution_count": 19,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uJsvsO-AApra",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#variance(df['customer'])"
+      ],
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lnSm4WyqAsrq",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#df['customers'].var()"
+      ],
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QIC84fZoAv9w",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#def std_dev(variable):\n",
+        "  #return np.sqrt(variance(variable))\n",
+        "\n",
+        "\n",
+        "#std_dev(df['sales'])"
+      ],
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pDYVao51A8sh",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#df['customers'].std()"
+      ],
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VV96oTc_BBxR",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# var1 = x, var2 = y \n",
+        "# You don't need to write your own function for covariance.\n",
+        "\n",
+        "#def cov (var1, var2):\n",
+        "  # x_bar1 = mean(var1)\n",
+        "  # x_bar2 = mean(var2)\n",
+        "  # x_deviation = var1 - x_bar1y_deviation = var2 - x_bar2\n",
+        "  # covariance = (x_deviation * y deviation).sum()/len(var1)-1\n",
+        "  #return covariance\n",
+        "\n",
+        "  #cov(df['sales'], sf['customers'])\n",
+        "\n",
+        "\n",
+        "  #covariance = df.cov()['customers']['sales']"
+      ],
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GSNiYn8lr6nN",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Statistics"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3d4izUhQvh2_",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 1.1 Sales for the past week was the following amounts: [3505, 2400, 3027, 2798, 3700, 3250, 2689]. Without using library functions, what is the mean, variance, and standard deviation of of sales from last week? (for extra bonus points, write your own function that can calculate these two values for any sized list)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "w1iZfYvBtEA1",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 231
+        },
+        "outputId": "ead9654a-57b0-44b6-9e48-e304edd76760"
+      },
+      "source": [
+        "Mon =3505 \n",
+        "Tues =2400\n",
+        "Wed =3027\n",
+        "Thur =2798\n",
+        "Fri =3700\n",
+        "Sat =3250\n",
+        "Sun =2689\n",
+        "week_total = (Mon+Tues+Wed+Thur+Fri+Sat+Sun)\n",
+        "week = [3505, 2400, 3027, 2798, 3700, 3250, 2689]\n",
+        "\n",
+        "\n",
+        "week_mean = weekdays_total /len(week) # Mean by hand.\n",
+        "var_distance_week = weekdays_total-week_mean \n",
+        "squared_distance = var_distance_week**2\n",
+        "sample_observations = len(week)-1\n",
+        "variance_week = squared_distance/sample_observations\n",
+        "\n",
+        "std_week = variance_week**0.5"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-25-e885cb3ed307>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 12\u001b[0;31m \u001b[0mweek_mean\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mweekdays_total\u001b[0m \u001b[0;34m/\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mweek\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;31m# Mean by hand.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     13\u001b[0m \u001b[0mvar_distance_week\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mweekdays_total\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mweek_mean\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     14\u001b[0m \u001b[0msquared_distance\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mvar_distance_week\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'weekdays_total' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QxNuj8K7e8XF",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "print(\"Mean: \", week_mean)\n",
+        "print(\"Number of Observations: \", observations)\n",
+        "print(\"Number of Observations for Sample: \", sample_observations)\n",
+        "\n",
+        "\n",
+        "print(\"Variance: \", variance_week)\n",
+        "\n",
+        "print(\"Standard Deviation:\", std_week)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oh63KaOctEp_",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 1.2 Find the covariance between last week's sales numbers and the number of customers that entered the store last week: [127, 80, 105, 92, 120, 115, 93] (you may use library functions for calculating the covariance since we didn't specifically talk about its formula)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "G7ZB0krot564",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "customers=[127, 80, 105, 92, 120, 115, 93]\n",
+        "np_customers = np.array([[127, 80, 105, 92, 120, 115, 93]])\n",
+        "customers_total = np_customers.sum()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Op9bf5dAiLPC",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "data = {\"week\": week, \"customers\": customers}\n",
+        "\n",
+        "df = pd.DataFrame(data)\n",
+        "\n",
+        "plt.scatter(df.customers, df.week)\n",
+        "plt.xlim(0,150)\n",
+        "plt.ylim(2000,4000)\n",
+        "plt.show()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zqUnUM-CjO7p",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df.cov()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "J9SbUY9mt66I",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 1.3 Find the standard deviation of customers who entered the store last week. Then, use the standard deviations of both sales and customers to standardize the covariance to find the correlation coefficient that summarizes the relationship between sales and customers. (You may use library functions to check your work.)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vFJms2YRrKhY",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#Find the Standard Deviation of customers who entered the store last week. \n",
+        "\n",
+        "customers_mean = customers_total /len(customers)\n",
+        "var_distance_customers = customers_total-customers_mean \n",
+        "squared_distance_cust = var_distance_customers**2\n",
+        "sample_observations_cust = len(customers)-1\n",
+        "variance_customers = squared_distance_cust/sample_observations_cust\n",
+        " \n",
+        "\n",
+        "std_customers = variance_customers ** 0.5\n",
+        "\n",
+        "print(\"Standard Deviation:\", std_customers)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hjrHtYZjo5as",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Standardize the Covariances of the sales and the number of customers from the last week.\n",
+        "\n",
+        "variable_week = (week_total-week_mean)/std_week\n",
+        "variable_customers = (customers_total-customers_mean)/std_customers\n",
+        "\n",
+        "\n",
+        "print(\"Standardized Covariance of Week:\", variable_week)\n",
+        "print(\"Standardized Covariance of Customers:\", variable_customers)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SIDmbKbotcM4",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "covariance = np.cov(week, customers)\n",
+        "print(covariance)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JrAII-M0tDoJ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "data = {\"week\": week, \"customers\": customers}\n",
+        "\n",
+        "df = pd.DataFrame(data)\n",
+        "\n",
+        "plt.scatter(df.customers, df.week)\n",
+        "plt.xlim(0,150)\n",
+        "plt.ylim(2000,4000)\n",
+        "plt.show()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "XmEDt66Dvc0e",
+        "colab_type": "text"
+      },
+      "source": [
+        ">>The covariance between the two variables is 7604.36. We can see that it is positive, suggesting the variables change in the same direction as we expect."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IbZVf7nmujPJ",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 1.4 Use pandas to import a cleaned version of the titanic dataset from the following link: [Titanic Dataset](https://raw.githubusercontent.com/Geoyi/Cleaning-Titanic-Data/master/titanic_clean.csv)\n",
+        "\n",
+        "## Calculate the variance-covariance matrix and correlation matrix for the titanic dataset's numeric columns. (you can encode some of the categorical variables and include them as a stretch goal if you finish early)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0TWgUIiaCFzq",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "column_headers=[\"\",\"pclass\",\"survived\",\"name\",\"sex\",\"age\",\"sibsp\",\"parch\",\"ticket\",\"fare\",\"cabin\",\"embarked\",\"boat\",\"body\",\"home.dest\",\"has_cabin_number\"]\n",
+        "df = pd.read_csv('https://raw.githubusercontent.com/Geoyi/Cleaning-Titanic-Data/master/titanic_clean.csv') # Don't need to add column_headers\n",
+        "df.head()\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7-dGX2ebwUzp",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df.describe()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qeo3PqaCwMZU",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df.describe().cov()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7K0Xfh8MvYkl",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Orthogonality"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Pe3eOZ2fvdZ-",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 2.1 Plot two vectors that are orthogonal to each other. What is a synonym for orthogonal?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YLSBk7hJvvCx",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "vector_1 = [0, 50]\n",
+        "vector_2 = [50, 0]\n",
+        "\n",
+        "# Plot the Scaled Vectors\n",
+        "plt.arrow(0,0, vector_1[0], vector_1[1],head_width=.05, head_length=0.05, color ='red')\n",
+        "plt.arrow(0,0, vector_2[0], vector_2[1],head_width=.05, head_length=0.05, color ='green')\n",
+        "plt.xlim(-10,55)          \n",
+        "plt.ylim(-10,55)\n",
+        "plt.title(\"Orthogonal Vectors\")\n",
+        "plt.show()\n",
+        "\n",
+        "# These two vectors are \"perpendicular\" to one another. "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7AS4V1Nhvvxz",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 2.2 Are the following vectors orthogonal? Why or why not?\n",
+        "\n",
+        "\\begin{align}\n",
+        "a = \\begin{bmatrix} -5 \\\\ 3 \\\\ 7 \\end{bmatrix}\n",
+        "\\qquad\n",
+        "b = \\begin{bmatrix} 6 \\\\ -8 \\\\ 2 \\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "F_-y54YSz47k",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "vector_a = [-5, 3, 7]\n",
+        "vector_b = [6, -8, 2]\n",
+        "vec_a_np = np.array(vector_a)\n",
+        "vec_b_np = np.array(vector_b)\n",
+        "# Array Broadcasting\n",
+        "\n",
+        "np.vdot(vec_a_np, vec_b_np)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xQsrhJoD0zIk",
+        "colab_type": "text"
+      },
+      "source": [
+        ">> The dot product of vectors a and b is -40, indicating that the vectors are NOT orthogonal (\"perpendicular\"). "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MiNjyqiEz5SG",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 2.3 Compute the following values: What do these quantities have in common?\n",
+        "\n",
+        "## What is $||c||^2$? \n",
+        "\n",
+        "## What is $c \\cdot c$? \n",
+        "\n",
+        "## What is $c^{T}c$?\n",
+        "\n",
+        "\\begin{align}\n",
+        "c = \\begin{bmatrix} 2 & -15 & 6 & 20 \\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d877bEnn1WZs",
+        "colab_type": "text"
+      },
+      "source": [
+        "What is $||c||^2$? \n",
+        "\n",
+        "(c = [2, −15, 6, 20])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ND5jGewF1dgu",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import numpy as np"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Wfr_5xu93CvV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "c = np.array([2, -15, 6, 20])\n",
+        "norm_c = np.linalg.norm(c)\n",
+        "norm_c = norm_c**2\n",
+        "print('Vector a Norm: ', norm_c)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9RqEsE7c1aKj",
+        "colab_type": "text"
+      },
+      "source": [
+        "What is $c \\cdot c$? \n",
+        "\n",
+        "(c = [2, −15, 6, 20])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Bg4eYlrY1eEZ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "c1=c"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wOOjpewm65-N",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "(c * c1).sum() # Dot Product"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bYPv2xeu1cij",
+        "colab_type": "text"
+      },
+      "source": [
+        "$c^{T}c$?\n",
+        "\n",
+        "(c = [2, −15, 6, 20])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IlV_uaYK1EQB",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "transpose_c = c.T #Transposed C\n",
+        "(transpose_c * c).sum() #Dot Product"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SGvjzKQZ9M-4",
+        "colab_type": "text"
+      },
+      "source": [
+        "#665 <- Common Value"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MK_TpWqk1Evk",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Unit Vectors"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Kpit6WWO1b8l",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 3.1 Using Latex, write the following vectors as a linear combination of scalars and unit vectors:\n",
+        "\n",
+        "\\begin{align}\n",
+        "d = \\begin{bmatrix} 7 \\\\ 12 \\end{bmatrix}\n",
+        "\\qquad\n",
+        "e = \\begin{bmatrix} 2 \\\\ 11 \\\\ -8  \\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oBCj1sDW2ouC",
+        "colab_type": "text"
+      },
+      "source": [
+        "Your text here"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dAdUQuep1_yJ",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 3.2 Turn vector $f$ into a unit vector:\n",
+        "\n",
+        "\\begin{align}\n",
+        "f = \\begin{bmatrix} 4 & 12 & 11 & 9 & 2 \\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "I3W8ZiHR1_Fa",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "f = [4, 12, 11, 9, 2]\n",
+        "norm_f = np.linalg.norm(f) # Norm of f.\n",
+        "print(\"Norm: \", norm_f)\n",
+        "unit_vector_f = f / norm_f\n",
+        "print(\"Unit Vector: \", unit_vector_f)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "o39UyP-I5lpP",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Linear Independence / Dependence "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ajfBqYe45sT5",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 4.1 Plot two vectors that are linearly dependent and two vectors that are linearly independent (bonus points if done in $\\mathbb{R}^3$)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TvdTWNGKRJAO",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Independent\n",
+        "\n",
+        "# Axis Bounds\n",
+        "plt.xlim(-1,3)          \n",
+        "plt.ylim(-1,3)\n",
+        "\n",
+        "# Unit Vectors\n",
+        "i_hat = [2,0]\n",
+        "j_hat = [0,2]\n",
+        "\n",
+        "# Fix Axes\n",
+        "plt.axes().set_aspect('equal');\n",
+        "\n",
+        "# PLot Vectors\n",
+        "plt.arrow(0, 0, i_hat[0], i_hat[1], linewidth=3, head_width=.05, head_length=0.05, color ='red')\n",
+        "plt.arrow(0, 0, j_hat[0], j_hat[1], linewidth=3, head_width=.05, head_length=0.05, color ='blue')\n",
+        "plt.title(\"Linearly Independent Vectors\")\n",
+        "plt.show();"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FVqU0ud9RMcn",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Independent\n",
+        "\n",
+        "# Axis Bounds\n",
+        "plt.xlim(-1,3)          \n",
+        "plt.ylim(-1,3)\n",
+        "\n",
+        "# Unit Vectors\n",
+        "i_hat = [-.75,1.50]\n",
+        "j_hat = [1.50,-.75]\n",
+        "\n",
+        "# Fix Axes\n",
+        "plt.axes().set_aspect('equal');\n",
+        "\n",
+        "# PLot Vectors\n",
+        "plt.arrow(0, 0, i_hat[0], i_hat[1], linewidth=3, head_width=.05, head_length=0.05, color ='red')\n",
+        "plt.arrow(0, 0, j_hat[0], j_hat[1], linewidth=3, head_width=.05, head_length=0.05, color ='blue')\n",
+        "plt.title(\"Linearly Independent Vectors\")\n",
+        "plt.show()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nOMI4yqxRNlH",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Plot Linearly Dependent Vectors\n",
+        "\n",
+        "# Axis Bounds\n",
+        "plt.xlim(-1.1,4)          \n",
+        "plt.ylim(-1.1,4)\n",
+        "\n",
+        "# Original Vector\n",
+        "vec = [2,0] \n",
+        "\n",
+        "# Scaled Vectors\n",
+        "vec2 = np.multiply(3, vec)\n",
+        "vec3 = np.multiply(-1,vec)\n",
+        "\n",
+        "# Get Vals for L\n",
+        "axes = plt.gca()\n",
+        "x_vals = np.array(axes.get_xlim())\n",
+        "y_vals = 0*x_vals\n",
+        "\n",
+        "# Plot Vectors and L\n",
+        "plt.plot(x_vals, y_vals, '--', color='b', linewidth=1)\n",
+        "plt.arrow(0,0, vec2[0], vec2[1], linewidth=3, head_width=.05, head_length=0.05, color ='yellow')\n",
+        "plt.arrow(0,0, vec[0], vec[1], linewidth=3, head_width=.05, head_length=0.05, color ='green')\n",
+        "plt.arrow(0,0, vec3[0], vec3[1], linewidth=3, head_width=.05, head_length=0.05, color ='red')\n",
+        "\n",
+        "plt.title(\"Linearly Dependent Vectors\")\n",
+        "plt.show()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1ClqvKwERZfX",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Dependent\n",
+        "\n",
+        "# Axis Bounds\n",
+        "plt.xlim(-8,4)          \n",
+        "plt.ylim(-5,3)\n",
+        "\n",
+        "# Unit Vectors\n",
+        "i_hat = [3, 2]\n",
+        "j_hat = [-6, -4]\n",
+        "\n",
+        "# Fix Axes\n",
+        "plt.axes().set_aspect('equal')\n",
+        "\n",
+        "# PLot Vectors\n",
+        "plt.arrow(0, 0, i_hat[0], i_hat[1], linewidth=3, head_width=.05, head_length=0.05, color ='red')\n",
+        "plt.arrow(0, 0, j_hat[0], j_hat[1], linewidth=3, head_width=.05, head_length=0.05, color ='blue')\n",
+        "plt.title(\"basis vectors in R^2\")\n",
+        "plt.show()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TrJ0MT_n3SvO",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Span"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "86iXLzwM2z8l",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 5.1 What is the span of the following vectors?\n",
+        "\n",
+        "\\begin{align}\n",
+        "g = \\begin{bmatrix} 1 & 2 \\end{bmatrix}\n",
+        "\\qquad\n",
+        "h = \\begin{bmatrix} 4 & 8 \\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "G2LK2RWL39Q4",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "g=[1,2]\n",
+        "h=[4,8]\n",
+        "m=np.array([g,h])\n",
+        "span=np.linalg.matrix_rank(m)\n",
+        "print(span)\n",
+        "\n",
+        "# R1 is the span"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "l1deylUj4IHH",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 5.2 What is the span of $\\{l, m, n\\}$?\n",
+        "\n",
+        "\\begin{align}\n",
+        "l = \\begin{bmatrix} 1 & 2 & 3 \\end{bmatrix}\n",
+        "\\qquad\n",
+        "m = \\begin{bmatrix} -1 & 0 & 7 \\end{bmatrix}\n",
+        "\\qquad\n",
+        "n = \\begin{bmatrix} 4 & 8  & 2\\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "p1i_ueD25ZcP",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "l=[1,2,3]\n",
+        "m=[-1,0,7]\n",
+        "n=[4,8,2]\n",
+        "m=np.array([l,m,n])\n",
+        "span=np.linalg.matrix_rank(m)\n",
+        "print(span)\n",
+        "\n",
+        "# R3 is the span"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IBqe7X1732kX",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Basis"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YeUZVHRM6PpT",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 6.1 Graph two vectors that form a basis for $\\mathbb{R}^2$\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "utvF3Pkt8NP6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "plt.arrow(0,0,0,2, head_width=0.1, head_length=0.05)\n",
+        "plt.arrow(0,0,2,0, head_width=0.1, head_length=0.05)\n",
+        "plt.xlim(-0.2,2.2)\n",
+        "plt.ylim(-0.2,2.2)\n",
+        "plt.show();"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "20yPFBDUxxnS",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 6.2 What does it mean to form a basis?"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3w4tEayT8M0o",
+        "colab_type": "text"
+      },
+      "source": [
+        "A basis is formed when a set of vectors can be used in linear combinations to form any other vector provided in the space allotted to the set.\n",
+        "\n",
+        "https://bit.ly/37Bg4R8"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "EHmUxbcY6vD3",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Rank"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IpJwt9kw6v8U",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 7.1 What is the Rank of P?\n",
+        "\n",
+        "\\begin{align}\n",
+        "P = \\begin{bmatrix} \n",
+        "1 & 2 & 3 \\\\\n",
+        " -1 & 0 & 7 \\\\\n",
+        "4 & 8  & 2\n",
+        "\\end{bmatrix}\n",
+        "\\end{align}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dTD0K1ME8Ngz",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Rank of P"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "jGqFMBYY7mHD",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 7.2 What does the rank of a matrix tell us?"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Vjg1IiCD8nnP",
+        "colab_type": "text"
+      },
+      "source": [
+        "The rank of a matrix tells us the vectors form a basis whose span has dimensions that are equal to its rank."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0Db2sc_V8QD6",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Linear Projections\n",
+        "\n",
+        "## 8.1 Line $L$ is formed by all of the vectors that can be created by scaling vector $v$ \n",
+        "\\begin{align}\n",
+        "v = \\begin{bmatrix} 1 & 3 \\end{bmatrix}\n",
+        "\\end{align}\n",
+        "\n",
+        "\\begin{align}\n",
+        "w = \\begin{bmatrix} -1 & 2 \\end{bmatrix}\n",
+        "\\end{align}\n",
+        "\n",
+        "## find $proj_{L}(w)$\n",
+        "\n",
+        "## graph your projected vector to check your work (make sure your axis are square/even)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hp5z2WTBCNKx",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TKkrPwRM-Oar",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Stretch Goal\n",
+        "\n",
+        "## For vectors that begin at the origin, the coordinates of where the vector ends can be interpreted as regular data points. (See 3Blue1Brown videos about Spans, Basis, etc.)\n",
+        "\n",
+        "## Write a function that can calculate the linear projection of each point (x,y) (vector) onto the line y=x. run the function and plot the original points in blue and the new projected points on the line y=x in red. \n",
+        "\n",
+        "## For extra points plot the orthogonal vectors as a dashed line from the original blue points to the projected red points."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cp52kZra-ykj",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "# Creating a dataframe for you to work with -Feel free to not use the dataframe if you don't want to.\n",
+        "x_values = [1, 4, 7, 3, 9, 4, 5 ]\n",
+        "y_values = [4, 2, 5, 0, 8, 2, 8]\n",
+        "\n",
+        "data = {\"x\": x_values, \"y\": y_values}\n",
+        "\n",
+        "df = pd.DataFrame(data)\n",
+        "\n",
+        "df.head()\n",
+        "\n",
+        "plt.scatter(df.x, df.y)\n",
+        "plt.show()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EZTA6Tj6BGDb",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
